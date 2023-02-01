@@ -1,0 +1,25 @@
+@use 'variables';
+.header-peruvian{
+    background-color: variables.$NavP;
+    background: linear-gradient(180deg, rgba(52,50,41,1) 0%, rgba(17,15,5,1) 47%, rgba(28,30,35,1) 100%);
+    color: variables.$Nav1;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    @media (min-width:768px) {
+        flex-direction: row;
+        justify-content: space-between;
+        
+
+    }
+    &__return{
+        
+        color:variables.$Nav1;
+    }
+    & h2{
+        margin: 10px;
+    }
+}
+

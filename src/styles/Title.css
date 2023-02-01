@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+.header-peruvian {
+  background-color: #343229;
+  background: linear-gradient(180deg, rgb(52, 50, 41) 0%, rgb(17, 15, 5) 47%, rgb(28, 30, 35) 100%);
+  color: #FFFEFA;
+  padding: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .header-peruvian {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.header-peruvian__return {
+  color: #FFFEFA;
+}
+.header-peruvian h2 {
+  margin: 10px;
+}
+
+/*# sourceMappingURL=Title.css.map */

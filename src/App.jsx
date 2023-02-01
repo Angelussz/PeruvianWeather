@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import Map from './components/Map'
+import Title from './components/Title'
 import './App.css'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
 
   return (
     <div className="App">
+      <Title />
       <Map />
     </div>
   )
