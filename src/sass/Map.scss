@@ -1,1 +1,12 @@
-@use 'variables'
+@use 'variables';
+.map-peruvian{
+    
+    background-color: variables.$MainP;
+    display: flex;
+    &__image{
+        width: 100%;
+        min-width: 560px;
+        max-width: 800px;
+        height: auto;
+    }
+}

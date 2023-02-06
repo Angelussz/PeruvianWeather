@@ -1,8 +1,8 @@
 import React from "react";
-
+import "../styles/Map.css"
 function Map() {
   return (
-    <div>
+    <div className="map-peruvian">
       <svg
         baseProfile={"tiny"}
         fill="#7c7c7c"
@@ -15,6 +15,7 @@ function Map() {
         viewBox="0 0 1000 1472"
         width="1000"
         xmlns="http://www.w3.org/2000/svg"
+        className="map-peruvian__image"
       >
         <path
           d="M328.5 961.4l-0.5 0.3-1 0.1-2.6-1.7-0.8-1.3-0.5-1.1 0.8-0.4 0.9 0.5 3 2.8 0.7 0.8z m5.6-2.3l-1.5-0.4-3.3-0.3 0.7-1.5 0.9-1.2 0.8-1.3 0.3-1.9 2.3 1.6 0.3 1.9-0.2 2-0.3 1.1z"
