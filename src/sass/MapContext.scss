@@ -1,0 +1,7 @@
+@use 'variables';
+
+.provider-container{
+    @media (min-width: 992px) {
+        display: flex;
+    }
+}

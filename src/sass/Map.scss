@@ -2,11 +2,19 @@
 .map-peruvian{
     
     background-color: variables.$MainP;
-    display: flex;
+    /*
+    @media (min-width:992px) {
+        flex-grow: 1;
+    }
+    */
     &__image{
         width: 100%;
         min-width: 560px;
         max-width: 800px;
         height: auto;
+    }
+    & path:hover{
+        fill: red;
+        cursor: pointer;
     }
 }

@@ -1,13 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
 .map-peruvian {
   background-color: #1C1E23;
-  display: flex;
+  /*
+  @media (min-width:992px) {
+      flex-grow: 1;
+  }
+  */
 }
 .map-peruvian__image {
   width: 100%;
   min-width: 560px;
   max-width: 800px;
   height: auto;
+}
+.map-peruvian path:hover {
+  fill: red;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=Map.css.map */

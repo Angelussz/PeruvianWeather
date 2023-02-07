@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Secular+One&display=swap");
+.country-description {
+  text-align: center;
+  color: #FBFCFF;
+  font-family: "Secular One", sans-serif;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.country-description p, .country-description h2, .country-description h3 {
+  border: 3px solid #000000;
+  background-color: #04060C;
+}
+@media (min-width: 768px) {
+  .country-description {
+    max-width: 600px;
+  }
+}
+@media (min-width: 992px) {
+  .country-description {
+    height: 700px;
+    display: grid;
+    align-content: center;
+    grid-template-areas: "country country" "weather weather-icon" "weather weather-des" "temperature temperature-act" "temperature temperature-min" "temperature temperature-max";
+  }
+  .country-description__city {
+    grid-area: country;
+  }
+  .country-description__weather {
+    grid-area: weather;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .country-description__clouds {
+    grid-area: weather-icon;
+  }
+  .country-description__description {
+    grid-area: weather-des;
+  }
+  .country-description__temperature {
+    grid-area: temperature;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .country-description__temperature__actual {
+    grid-area: temperature-act;
+  }
+  .country-description__temperature__min {
+    grid-area: temperature-mix;
+  }
+  .country-description__temperature__max {
+    grid-area: temperature-max;
+  }
+}
+
+/*# sourceMappingURL=Country.css.map */
