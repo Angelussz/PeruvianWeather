@@ -9,7 +9,12 @@
     margin-right: auto;
     & p,& h2, & h3 {
     border: 3px solid variables.$Main4;
-    background-color: variables.$Main3;
+    background-color: variables.$NavP;
+    }
+    &__clouds{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     @media (min-width:768px) {
         max-width: 600px;
@@ -37,6 +42,7 @@
         }
         &__clouds{
             grid-area: weather-icon;
+            
         }
         &__description{
             grid-area: weather-des;

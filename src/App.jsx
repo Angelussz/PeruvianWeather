@@ -29,8 +29,15 @@ function App() {
   return (
     <div className="App">
       <Title />
-      <MapContextProvider />
+      <MapContextProvider>
+        <Map />
+        <Country />
+      </MapContextProvider> 
+      <nav>
+        Derechos Reservados @Angelo Perez Rodriguez 
+      </nav>
     </div>
+    
   );
 }
 

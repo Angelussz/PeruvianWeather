@@ -1,25 +1,19 @@
-import React, { createContext } from "react";
+import React, { createContext, useState } from "react";
 import Map from "../components/Map";
 import Country from "../components/Country";
 import '../styles/MapContext.css'
 export const MapContext = createContext();
 
 export function MapContextProvider(props) {
-  let city_temp = {
-    city:"",
-    wmain:"",
-    wicon: "",
-    wdescription:"",
-    tempActual:0,
-    tempMin:0,
-    tempMax:0
-
-  }
+  const [city, setCity] = useState(null)
   return (
-    <MapContext.Provider value={city_temp}>
+    <MapContext.Provider value={{
+      setCity,
+      city
+    } 
+    }>
       <div className="provider-container">
-        <Map />
-        {city_temp.city !== "" ? <Country/>:""}
+        {props.children}
       </div>
     </MapContext.Provider>
   );

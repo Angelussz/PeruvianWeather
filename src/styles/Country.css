@@ -9,7 +9,12 @@
 }
 .country-description p, .country-description h2, .country-description h3 {
   border: 3px solid #000000;
-  background-color: #04060C;
+  background-color: #343229;
+}
+.country-description__clouds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 768px) {
   .country-description {
